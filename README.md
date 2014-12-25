@@ -1,24 +1,27 @@
-opera-developer-fedora
+opera-stable-fedora
 ======================
 ### How to Create RPM for Fedora
 
 # Create the following folders
 mkdir -p ~/rpmbuild/SOURCES
 
-# download stable .deb package file from Opera homepage to ~/rpmbuild/SOURCES
-http://opera.com
+# Download latest .deb via opera.com
+cd ~/rpmbuild/SOURCES
+wget http://operasoftware.pc.cdn.bitgravity.com/pub/opera/desktop/26.0.1656.60/linux/opera-stable_26.0.1656.60_amd64.deb
 
-# download libssl .deb package file from Ubuntu repository to ~/rpmbuild/SOURCES
-Check http://packages.ubuntu.com/trusty-updates/libssl1.0.0
+# Download libssl .deb file from Ubuntu repository
+cd ~/rpmbuild/SOURCES
+wget http://mirrors.kernel.org/ubuntu/pool/main/o/openssl/libssl1.0.0_1.0.1f-1ubuntu2.7_amd64.deb
 
-# build rpm package
+# Build rpm package
 rpmbuild -bb opera-developer.spec
 
-# install rpm
+# Install rpm
 yum install ~/rpmbuild/RPMS/x86_64/opera-*.x86_64.rpm
 
-# start to use opera stable
+# Use Opera Stable
 Just click icon or
 
 $ /usr/bin/opera
 
+# Works for Fedora 20 and Fedora 21
