@@ -1,9 +1,9 @@
-%define deb_opera %{name}_%{version}_amd64.deb
+%define deb_opera %{name}-stable_%{version}_amd64.deb
 %define deb_openssl libssl1.0.0_1.0.1f-1ubuntu2.7_amd64.deb
 
 Summary: Opera Developer
-Name: opera-developer
-Version: 26.0.1655.0
+Name: opera
+Version: 26.0.1656.60
 Release: 2%{dist}
 License: Proprietary
 Group: Applications/Internet
