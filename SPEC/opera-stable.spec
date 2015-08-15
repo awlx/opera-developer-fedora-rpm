@@ -3,7 +3,7 @@
 
 Summary: Opera Developer
 Name: opera
-Version: 26.0.1656.60
+Version: 31.0.1889.99
 Release: 2%{dist}
 License: Proprietary
 Group: Applications/Internet
