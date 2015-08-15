@@ -17,7 +17,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 BuildArch: x86_64
 Requires: systemd-libs
 BuildRequires: binutils xz tar systemd-libs
-Provides: libcrypto.so.1.0.0()(64bit) libudev.so.0()(64bit)
+Provides: libcrypto.so.1.0.0()(64bit) libudev.so.0()(64bit) libffmpeg.so.31()(64bit) 
 
 %description
 Opera Developer
@@ -71,6 +71,10 @@ ln -sL %{_libdir}/libudev.so.1 $RPM_BUILD_ROOT%{_libdir}/%{name}/lib/libudev.so.
 %{_datadir}
 
 %changelog
+* Sat Aug 15 2015 awlnx	<awlnx@penguinfriends.org> - 31.0.1889.99
+- version up
+- fix provides for libffmpeg.so.31 
+
 * Wed Oct 22 2014 Nobuyuki Ito <nobu.1026@gmail.com> - 26.0.1655.0-2
 - delete post and postun section
 - install libudev.so.0 symlink in install section

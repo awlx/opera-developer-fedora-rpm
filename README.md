@@ -24,4 +24,4 @@ Just click icon or
 
 $ /usr/bin/opera
 
-# Works for Fedora 20 and Fedora 21
+# Works for Fedora 20,Fedora 21 and Fedora 22
